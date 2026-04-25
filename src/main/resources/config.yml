@@ -1,0 +1,48 @@
+reader: #Reader , Input
+  fileName: "file1"
+  startRow: 0
+  header:
+    - "s.no"
+    - "enroll"
+    - "CO 1"
+    - "CO 2"
+    - "CO 3"
+    - "CO 4"
+    - "CO 5"
+    - "total"
+  range:
+    PO:
+      min: 7
+      max: 10
+    CO:
+      min: 8
+      max: 10
+      digit: 5 #no of CO in our case we have 5 so PO will be 10
+      targetMin : 40
+      targetMax : 50
+  functionality: "PO" # valid values ( CO , PO , BOTH )
+  totalRows: 380
+
+
+writer: # Writer , Input
+  fileName: "sheet"
+  header:
+    - "s.no"
+    - "enroll"
+    - "P1"
+    - "P2"
+    - "CO 1"
+    - "P3"
+    - "P4"
+    - "CO 2"
+    - "P5"
+    - "P6"
+    - "CO 3"
+    - "P7"
+    - "P8"
+    - "CO 4"
+    - "P9"
+    - "P10"
+    - "CO 5"
+    - "total"
+  totalRows: 380
